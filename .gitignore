@@ -29,3 +29,25 @@ Pictures/
 
 # Temporary and user-specific files
 .viminfo
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Dependency directories
+.npm/
+.yarn/
+
+# System Files
+.DS_Store
+.viminfo
+
+# Mac-specific files
+*.plist
+
+# npm cache
+.npm/_cacache/
+
+# Ignore any other hidden files in the home directory
+~
