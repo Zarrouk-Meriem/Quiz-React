@@ -1,5 +1,5 @@
 {
 	"editor.formatOnSave": true,
 	"editor.formatOnType": true,
-	"cSpell.words": ["occured"]
+	"cSpell.words": ["highscore", "occured"]
 }
