@@ -9,6 +9,7 @@ import Question from "./Components/Question";
 import NextButton from "./Components/NextButton";
 import FinishScreen from "./Components/FinishScreen";
 import Timer from "./Components/Timer";
+import Footer from "./Components/Footer";
 const SECS_PER_QUESTION = 30;
 const initialState = {
 	questions: [],
@@ -106,7 +107,7 @@ export default function App() {
 							dispatch={dispatch}
 							answer={answer}
 						/>
-						<>
+						<Footer>
 							<NextButton
 								index={index}
 								dispatch={dispatch}
@@ -114,7 +115,7 @@ export default function App() {
 								questionsNumber={questionsNumber}
 							/>
 							<Timer dispatch={dispatch} secondsRemaining={secondsRemaining} />
-						</>
+						</Footer>
 					</>
 				)}
 				{status === "finished" && (

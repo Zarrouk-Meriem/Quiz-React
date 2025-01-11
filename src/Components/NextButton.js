@@ -6,7 +6,7 @@ function NextButton({ dispatch, answer, questionsNumber, index }) {
 				className='btn btn-ui'
 				onClick={() => dispatch({ type: "nextQuestion" })}
 			>
-				Next
+				السؤال التالي
 			</button>
 		);
 	if (index === questionsNumber - 1)
@@ -15,7 +15,7 @@ function NextButton({ dispatch, answer, questionsNumber, index }) {
 				className='btn btn-ui'
 				onClick={() => dispatch({ type: "finish" })}
 			>
-				Finish
+				أنهبت
 			</button>
 		);
 }

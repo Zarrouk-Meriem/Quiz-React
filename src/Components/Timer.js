@@ -10,7 +10,7 @@ function Timer({ dispatch, secondsRemaining }) {
 		return () => clearInterval(id);
 	});
 	return (
-		<button className='btn'>
+		<button className='btn timer'>
 			{mins < 10 && "0"}
 			{mins}:{seconds < 10 && "0"}
 			{seconds}

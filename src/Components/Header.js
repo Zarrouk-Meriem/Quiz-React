@@ -1,10 +1,11 @@
 function Header() {
-  return (
-    <header className='app-header'>
-      <img src='logo512.png' alt='React logo' />
-      <h1>The React Quiz</h1>
-    </header>
-  );
+	return (
+		<header className='app-header'>
+			<img src='/Palestine-07.svg' alt='Palestine Flag' />
+			<h1>أسئلة عن فلسطين</h1>
+			<img src='/Palestine-07.svg' alt='Palestine Flag' />
+		</header>
+	);
 }
 
 export default Header;
