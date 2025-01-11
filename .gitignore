@@ -51,3 +51,6 @@ node_modules/
 
 # Ignore any other hidden files in the home directory
 ~
+
+# Local Netlify folder
+.netlify

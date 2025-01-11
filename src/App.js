@@ -79,7 +79,7 @@ export default function App() {
 
 	// const { questions, status } = initialState;
 	useEffect(function fetchQuestions() {
-		fetch("http://localhost:8000/questions")
+		fetch("https://palestine-quiz-v1.netlify.app/.netlify/functions/questions")
 			.then((res) => res.json())
 			.then((data) => dispatch({ type: "dataReceived", payload: data }))
 			.catch((err) => dispatch({ type: "dataFailed" }));
