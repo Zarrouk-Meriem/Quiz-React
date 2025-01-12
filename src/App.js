@@ -79,7 +79,7 @@ export default function App() {
 
 	// const { questions, status } = initialState;
 	useEffect(function fetchQuestions() {
-		fetch("https://palestine-quiz-v1.netlify.app/.netlify/functions/questions")
+		fetch("https://mocki.io/v1/b1893365-ea97-4aae-afd2-d77ca198392c")
 			.then((res) => res.json())
 			.then((data) => dispatch({ type: "dataReceived", payload: data }))
 			.catch((err) => dispatch({ type: "dataFailed" }));
