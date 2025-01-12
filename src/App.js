@@ -81,7 +81,9 @@ export default function App() {
 	useEffect(function fetchQuestions() {
 		fetch("https://mocki.io/v1/b1893365-ea97-4aae-afd2-d77ca198392c")
 			.then((res) => res.json())
-			.then((data) => dispatch({ type: "dataReceived", payload: data }))
+			.then((data) =>
+				dispatch({ type: "dataReceived", payload: data.questions })
+			)
 			.catch((err) => dispatch({ type: "dataFailed" }));
 	}, []);
 	return (
